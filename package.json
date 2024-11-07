@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc -p tsconfig.json && node dist/index.js"
+    "build": "tsc -p tsconfig.json && dotenv -e .env.development node dist/index.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "dotenv": "^16.4.5",
+    "dotenv-cli": "^7.4.2",
     "node-fetch": "^3.3.2"
   }
 }
