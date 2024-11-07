@@ -11,10 +11,10 @@ class Manager {
   async getMediaSourceFromFile() {
     const filenames = await fs.promises.readdir(this.conf.sourceDir); // 获取文件名列表
 
-    return Promise.all(filenames.map(name =>{
-     return fs.promises.readFile(path.join(this.conf.sourceDir, name), 'utf8');
-    })).then(data=>{
-      return data.map(d=>JSON.parse(d))
+    return Promise.all(filenames.map(name => {
+      return fs.promises.readFile(path.join(this.conf.sourceDir, name), 'utf8');
+    })).then(data => {
+      return data.map(d => JSON.parse(d))
     })
   }
 
@@ -31,11 +31,17 @@ class Manager {
   }
   //替换markdown
   async replaceMarkdown() {
+    const header: string = `
+    | 名称 | 网址 | 连接情况 | 
+| ------- | ------- | ------- | 
+    `.trim()
+    const replaceStart = "<!-- REPLACE_START -->"
+    const replaceEnd = "<!-- REPLACE_END -->"
     const str = this.connectStatus.map((connectionStatus) => {
-      return `| ${connectionStatus.name} | ${connectionStatus.website} | ${connectionStatus.isSuccess ? Emoji.CheckMark : Emoji.X }   | `
+      return `| ${connectionStatus.name} | ${connectionStatus.website} | ${connectionStatus.isSuccess ? Emoji.CheckMark : Emoji.X}   | `
     }).join('\n')
-    const content: string = await fs.promises.readFile(this.conf.readmeTemplate, "utf-8")
-    const replace = content.replace(" {{ .checkConnect }} ".trim(), str)
+    const content: string = await fs.promises.readFile('README.md', "utf-8")
+    const replace = content.replace(/<!-- REPLACE_START -->([\s\S]*?)<!-- REPLACE_END -->/, `${replaceStart}\n${header}\n${str}\n${replaceEnd}`)
     fs.promises.writeFile("README.md", replace, 'utf8');
   }
 
@@ -54,9 +60,9 @@ class Manager {
   }
 }
 
-  enum Emoji {
-    CheckMark = ':heavy_check_mark:',X = ':x:'
-  }
+enum Emoji {
+  CheckMark = ':heavy_check_mark:', X = ':x:'
+}
 function main() {
   new Manager(webSourceConf).workflow()
 }

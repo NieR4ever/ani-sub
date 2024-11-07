@@ -30,7 +30,6 @@ jobs:
         uses: actions/setup-node@v4.1.0
         with:
           node-version: 20.x
-          token: ${{ secrets.ACCESS_TOKEN }}
       - run: npm i
       - run: npm run build
       - name: Commit files 
@@ -39,7 +38,7 @@ jobs:
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
             git add .
-            git commit -m "update"
+            git commit -m "update media sources"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:

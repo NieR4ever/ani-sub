@@ -6,7 +6,6 @@ export interface Config {
     sourceDir: string;
     ouputFile: string;
     readonly isDebug: boolean;
-    readonly readmeTemplate: string
 }
 
 const getEnv = (key: string, defaultValue: string): string => process.env[key] || defaultValue;
@@ -17,7 +16,6 @@ const createConfig = (sourceDirEnv: string, outputFileEnv: string): Config => ({
     sourceDir: getEnv(sourceDirEnv, "source/default"), 
     ouputFile: `${getEnv(outputFileEnv, "default-file")}.json`,
     isDebug: debugMode,
-    readmeTemplate: getEnv("README_TEMPLATE_FILE","docs/README-template.md")
 });
 
 // 创建 Web 和 Bt 配置
