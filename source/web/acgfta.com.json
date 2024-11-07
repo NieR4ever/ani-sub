@@ -2,16 +2,16 @@
     "factoryId": "web-selector",
     "version": 2,
     "arguments": {
-        "name": "风车动漫",
+        "name": "饭团动漫",
         "description": "",
         "iconUrl": "",
         "searchConfig": {
-            "searchUrl": "https://vdm10.com/search/-------------.html?wd={keyword}",
+            "searchUrl": "https://acgfta.com/search.html?wd={keyword}",
             "searchUseOnlyFirstWord": true,
             "rawBaseUrl": "",
             "subjectFormatId": "a",
             "selectorSubjectFormatA": {
-                "selectLists": "body > div.sear_box > div.sear_con > div> div > div > div.result_title > a",
+                "selectLists": "body > main > div > div.mt-2-5 > div > div > div > a",
                 "preferShorterName": true
             },
             "selectorSubjectFormatIndexed": {
@@ -26,9 +26,9 @@
             },
             "channelFormatId": "index-grouped",
             "selectorChannelFormatFlattened": {
-                "selectChannelNames": "#play div.con_juji_bg div.playlist-tab ul li.tab-switch a",
+                "selectChannelNames": "body > main > div > div.row.mt-1-25.mb-5 > div > div > div > ul > li > button",
                 "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
-                "selectEpisodeLists": "#tab_con_playlist_1 > ul > li > a",
+                "selectEpisodeLists": ".anime-episode > a",
                 "selectEpisodesFromList": "a",
                 "selectEpisodeLinksFromList": "",
                 "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"

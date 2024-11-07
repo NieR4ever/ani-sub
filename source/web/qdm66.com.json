@@ -2,16 +2,16 @@
     "factoryId": "web-selector",
     "version": 2,
     "arguments": {
-        "name": "风车动漫",
+        "name": "趣动漫",
         "description": "",
         "iconUrl": "",
         "searchConfig": {
-            "searchUrl": "https://vdm10.com/search/-------------.html?wd={keyword}",
+            "searchUrl": "https://www.qdm66.com/search/-------------.html?wd={keyword}&submit=",
             "searchUseOnlyFirstWord": true,
             "rawBaseUrl": "",
             "subjectFormatId": "a",
             "selectorSubjectFormatA": {
-                "selectLists": "body > div.sear_box > div.sear_con > div> div > div > div.result_title > a",
+                "selectLists": "#searchList > li > div.detail > h4 > a",
                 "preferShorterName": true
             },
             "selectorSubjectFormatIndexed": {
@@ -26,9 +26,9 @@
             },
             "channelFormatId": "index-grouped",
             "selectorChannelFormatFlattened": {
-                "selectChannelNames": "#play div.con_juji_bg div.playlist-tab ul li.tab-switch a",
+                "selectChannelNames": "body > div.container > div > div.col-md-wide-7.col-xs-1.padding-0 > div:nth-child(4) > div > div.myui-panel_hd > div > ul > li > a",
                 "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
-                "selectEpisodeLists": "#tab_con_playlist_1 > ul > li > a",
+                "selectEpisodeLists": "#playlist1 > ul > li > a",
                 "selectEpisodesFromList": "a",
                 "selectEpisodeLinksFromList": "",
                 "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"

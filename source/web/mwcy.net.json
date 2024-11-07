@@ -2,16 +2,16 @@
     "factoryId": "web-selector",
     "version": 2,
     "arguments": {
-        "name": "风车动漫",
+        "name": "喵物次元",
         "description": "",
         "iconUrl": "",
         "searchConfig": {
-            "searchUrl": "https://vdm10.com/search/-------------.html?wd={keyword}",
+            "searchUrl": "https://www.mwcy.net/search.html?wd={keyword}",
             "searchUseOnlyFirstWord": true,
             "rawBaseUrl": "",
-            "subjectFormatId": "a",
+            "subjectFormatId": "indexed",
             "selectorSubjectFormatA": {
-                "selectLists": "body > div.sear_box > div.sear_con > div> div > div > div.result_title > a",
+                "selectLists": "body > div.box-width > div > div.row-9 > div > div > div.left.public-list-bj > a",
                 "preferShorterName": true
             },
             "selectorSubjectFormatIndexed": {
@@ -26,9 +26,9 @@
             },
             "channelFormatId": "index-grouped",
             "selectorChannelFormatFlattened": {
-                "selectChannelNames": "#play div.con_juji_bg div.playlist-tab ul li.tab-switch a",
+                "selectChannelNames": ".anthology-tab > .swiper-wrapper a",
                 "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
-                "selectEpisodeLists": "#tab_con_playlist_1 > ul > li > a",
+                "selectEpisodeLists": ".anthology-list-box",
                 "selectEpisodesFromList": "a",
                 "selectEpisodeLinksFromList": "",
                 "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"

@@ -2,20 +2,20 @@
     "factoryId": "web-selector",
     "version": 2,
     "arguments": {
-        "name": "风车动漫",
+        "name": "樱之空动漫",
         "description": "",
         "iconUrl": "",
         "searchConfig": {
-            "searchUrl": "https://vdm10.com/search/-------------.html?wd={keyword}",
+            "searchUrl": "https://skr.skr2.cc:666/vodsearch/-------------/?wd={keyword}&submit=",
             "searchUseOnlyFirstWord": true,
             "rawBaseUrl": "",
             "subjectFormatId": "a",
             "selectorSubjectFormatA": {
-                "selectLists": "body > div.sear_box > div.sear_con > div> div > div > div.result_title > a",
+                "selectLists": "body > div.container > div.left_row.fl > div > ul.vodlist.clearfix > li > div.searchlist_titbox > h4 > a",
                 "preferShorterName": true
             },
             "selectorSubjectFormatIndexed": {
-                "selectNames": ".search-box .thumb-content > .thumb-txt",
+                "selectNames": "body > div.container > div.left_row.fl > div > ul.vodlist.clearfix > li > div.searchlist_titbox > h4 > a",
                 "selectLinks": ".search-box .thumb-menu > a",
                 "preferShorterName": true
             },
@@ -26,9 +26,9 @@
             },
             "channelFormatId": "index-grouped",
             "selectorChannelFormatFlattened": {
-                "selectChannelNames": "#play div.con_juji_bg div.playlist-tab ul li.tab-switch a",
+                "selectChannelNames": "#NumTab > a",
                 "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
-                "selectEpisodeLists": "#tab_con_playlist_1 > ul > li > a",
+                "selectEpisodeLists": "#bofy > div.play_source > div.play_list_box.hide.show > div.playlist_full > ul > li > a",
                 "selectEpisodesFromList": "a",
                 "selectEpisodeLinksFromList": "",
                 "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
