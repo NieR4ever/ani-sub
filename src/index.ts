@@ -29,13 +29,12 @@ class Manager {
     const formattedJson = JSON.stringify(obj, null, this.conf.isDebug ? 2 : 0)
     fs.promises.writeFile(this.conf.ouputFile, formattedJson, 'utf8');
   }
-
   //替换markdown
   async replaceMarkdown() {
     const str = this.connectStatus.map((connectionStatus) => {
-      return `| ${connectionStatus.name} | ${connectionStatus.website} | ${connectionStatus.isSuccess} | `
+      return `| ${connectionStatus.name} | ${connectionStatus.website} | ${connectionStatus.isSuccess ? Emoji.CheckMark : Emoji.X }   | `
     }).join('\n')
-    const content: string = fs.readFileSync(this.conf.readmeTemplate, "utf-8")
+    const content: string = await fs.promises.readFile(this.conf.readmeTemplate, "utf-8")
     const replace = content.replace(" {{ .checkConnect }} ".trim(), str)
     fs.promises.writeFile("README.md", replace, 'utf8');
   }
@@ -55,6 +54,9 @@ class Manager {
   }
 }
 
+  enum Emoji {
+    CheckMark = ':heavy_check_mark:',X = ':x:'
+  }
 function main() {
   new Manager(webSourceConf).workflow()
 }
