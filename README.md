@@ -5,6 +5,7 @@ https://raw.githubusercontent.com/Nier4ever/ani-sub/dev/output-css-dev.json
 
 | 名称 | 网址 | 连接情况 | 
 | ------- | ------- | ------- | 
+| 饭团动漫 copy | https://acgfta.com | :heavy_check_mark:   | 
 | 饭团动漫 | https://acgfta.com | :heavy_check_mark:   | 
 | 异世界动漫 | https://www.dmmiku.com | :heavy_check_mark:   | 
 | 喵物次元 | https://www.mwcy.net | :heavy_check_mark:   | 
