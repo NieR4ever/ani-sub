@@ -5,9 +5,8 @@ export interface ConnectionStatus {
   isSuccess: boolean
 }
 export class CheckManager {
-  constructor(private exportedMediaSourceDatas: ExportedMediaSourceData[]) { }
-  getConnectionStatus(): Promise<ConnectionStatus[]> {
-    return Promise.all(this.exportedMediaSourceDatas.map(async (data) => {
+  getConnectionStatus(exportedMediaSourceDatas: ExportedMediaSourceData[]): Promise<ConnectionStatus[]> {
+    return Promise.all(exportedMediaSourceDatas.map(async (data) => {
       const searchUrl = data.arguments['searchConfig']['searchUrl']
       const url = this.tryGetVaildUrl(searchUrl)
       var isSuccess: boolean
