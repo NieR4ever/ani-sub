@@ -13,7 +13,7 @@ const getEnv = (key: string, defaultValue: string): string => process.env[key] |
 const debugMode = Boolean(process.env.IS_DEBUG);
 
 const createConfig = (sourceDirEnv: string, outputFileEnv: string): Config => ({
-    sourceDir: getEnv(sourceDirEnv, "source/default"), 
+    sourceDir: getEnv(sourceDirEnv, "source/default"),
     ouputFile: `${getEnv(outputFileEnv, "default-file")}.json`,
     isDebug: debugMode,
 });
