@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc -p tsconfig.json && dotenv -e .env.development node dist/index.js"
+    "dev": "tsc -p tsconfig.json && dotenv -e .env.development node dist/index.js",
+    "build": "tsc -p tsconfig.json && dotenv -e .env.production node dist/index.js"
   },
   "author": "",
   "license": "ISC",
