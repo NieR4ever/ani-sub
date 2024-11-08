@@ -2,16 +2,16 @@
     "factoryId": "web-selector",
     "version": 2,
     "arguments": {
-        "name": "趣动漫",
+        "name": "九兔动漫",
         "description": "",
         "iconUrl": "",
         "searchConfig": {
-            "searchUrl": "https://www.qdm66.com/search/-------------.html?wd={keyword}&submit=",
+            "searchUrl": "https://www.9tdm.com/search.html?wd={keyword}",
             "searchUseOnlyFirstWord": true,
             "rawBaseUrl": "",
             "subjectFormatId": "a",
             "selectorSubjectFormatA": {
-                "selectLists": "#searchList > li > div.detail > h4 > a",
+                "selectLists": "body > div.container-fluid > div > div.col-md-9.ms-sm-auto.col-lg-10.p-0.px-md-4 > div > ul > li > div > div.w-obj.flex-grow-1.mr-1.ps-3.overflow-hidden.fs-7.text-body-secondary > h3 > a",
                 "preferShorterName": true
             },
             "selectorSubjectFormatIndexed": {
@@ -24,17 +24,17 @@
                 "selectNames": "$[*]['title','name']",
                 "preferShorterName": true
             },
-            "channelFormatId": "no-channel",
+            "channelFormatId": "index-grouped",
             "selectorChannelFormatFlattened": {
-                "selectChannelNames": "body > div.container > div > div.col-md-wide-7.col-xs-1.padding-0 > div:nth-child(4) > div > div.myui-panel_hd > div > ul > li > a",
+                "selectChannelNames": "body > div.container-fluid > div > div.col-md-9.ms-sm-auto.col-lg-10.p-0.px-md-4 > div.video-urls.bg-body.rounded.p-3.p-md-4.mt-3.mt-md-4 > div.form-floating > select > option",
                 "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
-                "selectEpisodeLists": "body > div > div > div > div:nth-child(4) > div > div > div > ul > li > a",
+                "selectEpisodeLists": "body > div.container-fluid > div > div.col-md-9.ms-sm-auto.col-lg-10.p-0.px-md-4 > div.video-urls.bg-body.rounded.p-3.p-md-4.mt-3.mt-md-4 > div.form-collapse.tab-content.pb-2 > ul.hl-plays-list.row.row-cols-3.row-cols-md-4.row-cols-xl-6.g-3.d-flex.bfzym3u8.clearfix > li > a",
                 "selectEpisodesFromList": "a",
                 "selectEpisodeLinksFromList": "",
                 "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
             },
             "selectorChannelFormatNoChannel": {
-                "selectEpisodes": "#playlist1 > ul > li > a",
+                "selectEpisodes": "body > div.container-fluid > div > div.col-md-9.ms-sm-auto.col-lg-10.p-0.px-md-4 > div.video-urls.bg-body.rounded.p-3.p-md-4.mt-3.mt-md-4 > div.form-floating > select > option:nth-child(1)",
                 "selectEpisodeLinks": "",
                 "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
             },
