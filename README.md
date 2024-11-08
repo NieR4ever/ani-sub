@@ -6,6 +6,7 @@ https://raw.githubusercontent.com/Nier4ever/ani-sub/dev/css.json
 <!-- REPLACE_START -->
 | 名称 | 网址 | 连接情况 | 
 | ------- | ------- | ------- |
+| 九兔动漫 | https://www.9tdm.com | :x:   | 
 | 饭团动漫 | https://acgfta.com | :heavy_check_mark:   | 
 | 异世界动漫 | https://www.dmmiku.com | :heavy_check_mark:   | 
 | 漫岛 | https://www.imandaow.com | :heavy_check_mark:   | 
