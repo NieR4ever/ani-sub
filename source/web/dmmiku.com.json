@@ -28,7 +28,7 @@
             "selectorChannelFormatFlattened": {
                 "selectChannelNames": "#NumTab > a",
                 "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
-                "selectEpisodeLists": "#playlistbox > ul > li> a",
+                "selectEpisodeLists": "#playlistbox",
                 "selectEpisodesFromList": "a",
                 "selectEpisodeLinksFromList": "",
                 "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"

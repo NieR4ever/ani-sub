@@ -28,13 +28,13 @@
             "selectorChannelFormatFlattened": {
                 "selectChannelNames": "body > main > div > div.row.mt-1-25.mb-5 > div > div > div > ul > li > button",
                 "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
-                "selectEpisodeLists": ".anime-episode > a",
+                "selectEpisodeLists": ".anime-episode",
                 "selectEpisodesFromList": "a",
                 "selectEpisodeLinksFromList": "",
                 "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
             },
             "selectorChannelFormatNoChannel": {
-                "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                "selectEpisodes": "#线路一 > a",
                 "selectEpisodeLinks": "",
                 "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
             },
