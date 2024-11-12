@@ -5,6 +5,7 @@ config()
 export interface Config {
     sourceDir: string;
     ouputFile: string;
+    ouputMinFile: string;
     readonly isDebug: boolean;
 }
 
@@ -15,6 +16,7 @@ const debugMode = Boolean(process.env.IS_DEBUG);
 const createConfig = (sourceDirEnv: string, outputFileEnv: string): Config => ({
     sourceDir: getEnv(sourceDirEnv, "source/default"),
     ouputFile: `${getEnv(outputFileEnv, "default-file")}.json`,
+    ouputMinFile: `${getEnv(outputFileEnv, "default-file")}.min.json`,
     isDebug: debugMode,
 });
 

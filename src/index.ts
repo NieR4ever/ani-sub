@@ -30,7 +30,8 @@ class Manager {
     }
 
     const formattedJson = JSON.stringify(obj, null, this.conf.isDebug ? 2 : 0)
-    fs.promises.writeFile(this.conf.ouputFile, formattedJson, 'utf8');
+    fs.promises.writeFile(this.conf.ouputFile, JSON.stringify(obj, null, 2), 'utf8');
+    fs.promises.writeFile(this.conf.ouputMinFile, JSON.stringify(obj, null, 0), 'utf8');
   }
 
   //替换markdown
