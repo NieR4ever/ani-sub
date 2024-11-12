@@ -4,7 +4,7 @@
     "arguments": {
         "name": "趣动漫",
         "description": "",
-        "iconUrl": "",
+        "iconUrl": "https://www.qdm66.com/favicon.ico",
         "searchConfig": {
             "searchUrl": "https://www.qdm66.com/search/-------------.html?wd={keyword}&submit=",
             "searchUseOnlyFirstWord": true,
@@ -24,11 +24,11 @@
                 "selectNames": "$[*]['title','name']",
                 "preferShorterName": true
             },
-            "channelFormatId": "no-channel",
+            "channelFormatId": "index-grouped",
             "selectorChannelFormatFlattened": {
                 "selectChannelNames": "body > div.container > div > div.col-md-wide-7.col-xs-1.padding-0 > div:nth-child(4) > div > div.myui-panel_hd > div > ul > li > a",
                 "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
-                "selectEpisodeLists": "body > div > div > div > div:nth-child(4) > div > div > div > ul > li > a",
+                "selectEpisodeLists": "body > div.container > div > div.col-md-wide-7.col-xs-1.padding-0 > div:nth-child(4) > div > div.tab-content.myui-panel_bd > div",
                 "selectEpisodesFromList": "a",
                 "selectEpisodeLinksFromList": "",
                 "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"

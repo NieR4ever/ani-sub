@@ -4,7 +4,7 @@
     "arguments": {
         "name": "樱之空动漫",
         "description": "",
-        "iconUrl": "",
+        "iconUrl": "https://skr.skr2.cc:666/favicon.ico",
         "searchConfig": {
             "searchUrl": "https://skr.skr2.cc:666/vodsearch/-------------/?wd={keyword}&submit=",
             "searchUseOnlyFirstWord": true,
@@ -28,7 +28,7 @@
             "selectorChannelFormatFlattened": {
                 "selectChannelNames": "#NumTab > a",
                 "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
-                "selectEpisodeLists": "#bofy > div.play_source > div.play_list_box.hide.show > div.playlist_full > ul > li > a",
+                "selectEpisodeLists": "div.play_list_box",
                 "selectEpisodesFromList": "a",
                 "selectEpisodeLinksFromList": "",
                 "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"

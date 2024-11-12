@@ -4,7 +4,7 @@
     "arguments": {
         "name": "风车动漫",
         "description": "",
-        "iconUrl": "",
+        "iconUrl": "https://vdm10.com/favicon.ico",
         "searchConfig": {
             "searchUrl": "https://vdm10.com/search/-------------.html?wd={keyword}",
             "searchUseOnlyFirstWord": true,
@@ -28,13 +28,13 @@
             "selectorChannelFormatFlattened": {
                 "selectChannelNames": "#play div.con_juji_bg div.playlist-tab ul li.tab-switch a",
                 "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
-                "selectEpisodeLists": "#tab_con_playlist_1 > ul > li > a",
+                "selectEpisodeLists": ".con_c2_list",
                 "selectEpisodesFromList": "a",
                 "selectEpisodeLinksFromList": "",
                 "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
             },
             "selectorChannelFormatNoChannel": {
-                "selectEpisodes": "#glist-1 > div.module-blocklist.scroll-box.scroll-box-y > div > a",
+                "selectEpisodes": ".con_c2_list > li > a",
                 "selectEpisodeLinks": "",
                 "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
             },
