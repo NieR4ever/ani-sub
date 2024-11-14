@@ -1,4 +1,3 @@
-
 export interface ConnectionStatus {
   name: string
   website: string,
@@ -9,6 +8,7 @@ export class CheckManager {
     return Promise.all(exportedMediaSourceDatas.map(async (data) => {
       const searchUrl = data.arguments['searchConfig']['searchUrl']
       const url = this.tryGetVaildUrl(searchUrl)
+      console.log(url)
       var isSuccess: boolean
       const response = await fetch(url).catch(reason => {
         return Response.error()
@@ -16,14 +16,14 @@ export class CheckManager {
       isSuccess = response.status === 200
       return {
         name: data.arguments['name'],
-        website: url instanceof URL ? url.origin : url,
+        website: url,
         isSuccess: isSuccess
       }
     }))
   }
   private tryGetVaildUrl(url: string) {
     try {
-      return new URL(url)
+      return new URL(url).origin
     } catch (error) {
       return url
     }
