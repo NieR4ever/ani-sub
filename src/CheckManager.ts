@@ -8,7 +8,6 @@ export class CheckManager {
     return Promise.all(exportedMediaSourceDatas.map(async (data) => {
       const searchUrl = data.arguments['searchConfig']['searchUrl']
       const url = this.tryGetVaildUrl(searchUrl)
-      console.log(url)
       var isSuccess: boolean
       const response = await fetch(url).catch(reason => {
         return Response.error()
