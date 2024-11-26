@@ -10,9 +10,12 @@ https://raw.githubusercontent.com/Nier4ever/ani-sub/dev/css.json
 | 饭团动漫 | https://acgfta.com | :heavy_check_mark:   | 
 | Aki动漫 | https://www.akianime.cc | :heavy_check_mark:   | 
 | 异世界动漫 | https://www.dmmiku.com | :heavy_check_mark:   | 
+| 爱看番 | https://www.ikfan.com | :heavy_check_mark:   | 
 | 漫岛 | https://www.imandaow.com | :heavy_check_mark:   | 
 | 喵物次元 | https://www.mwcy.net | :heavy_check_mark:   | 
+| MX动漫(mxdmp) | https://www.mxdmp.com | :heavy_check_mark:   | 
 | 趣动漫 | https://www.qdm66.com | :heavy_check_mark:   | 
+| 思思动漫 | https://www.sisidm.com | :heavy_check_mark:   | 
 | 樱之空动漫 | https://skr.skr2.cc:666 | :heavy_check_mark:   | 
 | ssrfun | https://www.ssrfun.com | :heavy_check_mark:   | 
 | 风车动漫 | https://vdm10.com | :heavy_check_mark:   | 
