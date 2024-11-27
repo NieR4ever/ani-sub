@@ -4,7 +4,7 @@
     "arguments": {
         "name": "中国动漫网(可能有广告)",
         "description": "",
-        "iconUrl": "https://zgacgn.com/templets/DM/images/logo.gif",
+        "iconUrl": "https://zgacgn.com/favicon.ico",
         "searchConfig": {
             "searchUrl": "https://zgacgn.com/search.php?searchword={keyword}",
             "searchUseOnlyFirstWord": true,

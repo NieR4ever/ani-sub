@@ -4,7 +4,7 @@
     "arguments": {
         "name": "MX动漫(mxdmp)",
         "description": "",
-        "iconUrl": "",
+        "iconUrl": "https://www.mxdmp.com/favicon.ico",
         "searchConfig": {
             "searchUrl": "https://www.mxdmp.com/search/-------------/?wd={keyword}&submit=",
             "searchUseOnlyFirstWord": true,

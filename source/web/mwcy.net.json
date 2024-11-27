@@ -4,7 +4,7 @@
     "arguments": {
         "name": "喵物次元",
         "description": "",
-        "iconUrl": "",
+        "iconUrl": "https://www.mwcy.net/upload/site/20241103-1/0e9b2520a7f643e88a7f51412f6b4665.png",
         "searchConfig": {
             "searchUrl": "https://www.mwcy.net/search.html?wd={keyword}",
             "searchUseOnlyFirstWord": true,

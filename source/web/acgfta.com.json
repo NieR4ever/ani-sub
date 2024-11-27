@@ -4,7 +4,7 @@
     "arguments": {
         "name": "饭团动漫",
         "description": "",
-        "iconUrl": "",
+        "iconUrl": "https://acgfta.com/template/ft-v2/icon/acgfantuan-icon-72.png",
         "searchConfig": {
             "searchUrl": "https://acgfta.com/search.html?wd={keyword}",
             "searchUseOnlyFirstWord": true,

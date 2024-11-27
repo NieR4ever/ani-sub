@@ -4,7 +4,7 @@
     "arguments": {
         "name": "异世界动漫",
         "description": "",
-        "iconUrl": "",
+        "iconUrl": "https://www.dmmiku.com/template/conch/asset/img/favicon.png",
         "searchConfig": {
             "searchUrl": "https://www.dmmiku.com/index.php/vod/search.html?wd={keyword}&submit=",
             "searchUseOnlyFirstWord": true,
