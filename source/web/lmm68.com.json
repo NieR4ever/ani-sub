@@ -4,7 +4,7 @@
     "arguments": {
         "name": "路漫漫",
         "description": "",
-        "iconUrl": "https://www.lmm68.com/template/jable/statics/image/logo.png",
+        "iconUrl": "https://www.lmm68.com/template/jable/statics/icon/apple-touch-icon.png",
         "searchConfig": {
             "searchUrl": "https://www.lmm68.com/vod/search.html?wd={keyword}",
             "searchUseOnlyFirstWord": true,

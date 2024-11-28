@@ -4,7 +4,7 @@
     "arguments": {
         "name": "爱看番",
         "description": "",
-        "iconUrl": "https://www.ikfan.com/upload/site/20240929-1/66424dfa8534bc4282fcc56778070ae1.png",
+        "iconUrl": "https://www.ikfan.com/upload/site/20240929-1/2edd907464ad7ec3f4bbc899cb5386b7.png",
         "searchConfig": {
             "searchUrl": "https://www.ikfan.com/vodsearch/-------------.html?wd={keyword}",
             "searchUseOnlyFirstWord": true,

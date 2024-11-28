@@ -4,7 +4,7 @@
     "arguments": {
         "name": "樱花动漫",
         "description": "",
-        "iconUrl": "https://www.yinghua2.com/statics/img/logo_f.png",
+        "iconUrl": "https://www.yinghua2.com/statics/img/favicon.ico",
         "searchConfig": {
             "searchUrl": "https://www.yinghua2.com/index.php/vod/search.html?wd={keyword}",
             "searchUseOnlyFirstWord": true,
