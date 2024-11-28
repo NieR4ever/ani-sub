@@ -245,7 +245,7 @@
         "arguments": {
           "name": "番茄动漫",
           "description": "",
-          "iconUrl": "https://www.fqdm.cc/upload/mxprocms/20240528-1/def1b2c4c43bff3d47e6a492a4cfe111.png",
+          "iconUrl": "https://www.fqdm.cc/upload/mxprocms/20240530-1/3d17fab3cb763e6ad7031974bf87f322.jpg",
           "searchConfig": {
             "searchUrl": "https://www.fqdm.cc/index.php/vod/search.html?wd={keyword}",
             "searchUseOnlyFirstWord": true,
@@ -305,7 +305,7 @@
         "arguments": {
           "name": "爱看番",
           "description": "",
-          "iconUrl": "https://www.ikfan.com/upload/site/20240929-1/66424dfa8534bc4282fcc56778070ae1.png",
+          "iconUrl": "https://www.ikfan.com/upload/site/20240929-1/2edd907464ad7ec3f4bbc899cb5386b7.png",
           "searchConfig": {
             "searchUrl": "https://www.ikfan.com/vodsearch/-------------.html?wd={keyword}",
             "searchUseOnlyFirstWord": true,
@@ -424,7 +424,7 @@
         "arguments": {
           "name": "路漫漫",
           "description": "",
-          "iconUrl": "https://www.lmm68.com/template/jable/statics/image/logo.png",
+          "iconUrl": "https://www.lmm68.com/template/jable/statics/icon/apple-touch-icon.png",
           "searchConfig": {
             "searchUrl": "https://www.lmm68.com/vod/search.html?wd={keyword}",
             "searchUseOnlyFirstWord": true,
@@ -1140,7 +1140,7 @@
         "arguments": {
           "name": "樱花动漫",
           "description": "",
-          "iconUrl": "https://www.yinghua2.com/statics/img/logo_f.png",
+          "iconUrl": "https://www.yinghua2.com/statics/img/favicon.ico",
           "searchConfig": {
             "searchUrl": "https://www.yinghua2.com/index.php/vod/search.html?wd={keyword}",
             "searchUseOnlyFirstWord": true,
