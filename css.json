@@ -966,14 +966,14 @@
             "searchUseOnlyFirstWord": true,
             "searchRemoveSpecial": true,
             "rawBaseUrl": "",
-            "subjectFormatId": "a",
+            "subjectFormatId": "indexed",
             "selectorSubjectFormatA": {
               "selectLists": "div.module-card-item-title > a",
               "preferShorterName": true
             },
             "selectorSubjectFormatIndexed": {
-              "selectNames": ".search-box .thumb-content > .thumb-txt",
-              "selectLinks": ".search-box .thumb-menu > a",
+              "selectNames": "div.module-card-item-title",
+              "selectLinks": "div.module-card-item > div.module-card-item-footer > a:nth-child(2)",
               "preferShorterName": true
             },
             "selectorSubjectFormatJsonPathIndexed": {
@@ -1303,7 +1303,7 @@
             "matchVideo": {
               "enableNestedUrl": false,
               "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
-              "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)|(.+player/\\?url=(?<v>[^&]+\\.m3u8))",
+              "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(\\.m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)|(.+player/\\?url=(?<v>[^&]+\\.m3u8))",
               "cookies": "quality=1080",
               "addHeadersToVideo": {
                 "referer": "",
