@@ -14,6 +14,7 @@ https://raw.githubusercontent.com/Nier4ever/ani-sub/dev/css.json
 | 番茄动漫 | https://www.fqdm.cc | :heavy_check_mark:   | 
 | 爱看番 | https://www.ikfan.com | :heavy_check_mark:   | 
 | 漫岛 | https://www.imandaow.com | :heavy_check_mark:   | 
+| kimivod | https://cn.kimivod.com | :heavy_check_mark:   | 
 | 路漫漫 | https://www.lmm68.com | :heavy_check_mark:   | 
 | 漫次元 | https://www.mcydh.com | :heavy_check_mark:   | 
 | 蜜桃动漫 | https://www.mitaodm.com | :heavy_check_mark:   | 
